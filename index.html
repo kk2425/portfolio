@@ -22,6 +22,28 @@
             transform: translateY(-5px);
             transition: all 0.3s ease;
         }
+         body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;}
+        .card {
+            background-color: white;
+            border-radius: 16px;box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);padding: 24px;transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 12px;
+            border-radius: 20px;font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #7c3aed);-webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -58,18 +80,89 @@
 
     <!-- Hero Section -->
     <section id="home" class="pt-24 pb-12 md:pt-32 flex justify-center">
-        <div class="bg-blue-300 rounded-xl w-[90%] md:w-[85%] p-8 shadow-lg">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 animate-fade-in">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Khushi Korgaonkar</h1>
-                    <p class="text-gray-600 mb-6">Front-end Developer | UI/UX Designer</p>
-                    <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">View Projects</a>
-                </div>
-                <div class="md:w-[40%] mt-8 md:mt-0">
-                    <img src="profile.jpg" Coding" class="rounded-lg shadow-lg">
-                </div>
-            </div>
-        </div>
+      <h1 class="text-5xl font-bold gradient-text">Hello, There!!</h1>
+</header>
+<main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+<div class="card md:col-span-1 flex flex-col items-center text-center">
+<img alt="Khushi Korgaonkar avatar" class="w-32 h-32 rounded-full mb-6 border-4 border-indigo-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD30Ddlzy48z7geLIYv7chyxCx-9tihkCTQgmiR3T2LPAoyTHCl2KvbkpDvZ1EtRENo2tuS1eI-gH-5KWwKOIH_H4ghlgfCMTtn6OAXMSg5BRf8mroUuqSiUG-blGA3PSEPyog3J2VnjVOSrJPgTSZFW79MVxYTAUgDVLiLwzyufrDn68oMPCeVuinT7vrxYQwtGgk-v5MPvl96fHgCinHEAL9U50pYyhmeueKRKSeRzR1owkPopupxtNVgaemhpwg9WXCR0HSW22WC"/>
+<h2 class="text-2xl font-semibold text-gray-800 mb-2">👋 Hi there, I'm Khushi Korgaonkar</h2>
+<p class="text-gray-600 text-sm leading-relaxed">
+                A Third Year Engineering student in the field of Electronics and Computer Science with a Minors in UI/UX. Currently focusing on front-end development and UI/UX designing 💻🔮
+            </p>
+</div>
+<div class="card md:col-span-1 flex flex-col">
+<div class="relative w-full h-48 mb-6 rounded-lg overflow-hidden">
+<img alt="Web development technologies collage" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1nvPT0pMPM5Bip3VPIXU8YojIy09Sqyl2umEeZAQHlsCnbQztkdCVqiCTiX3RFEg6aA-FOxMpnBJomimBmB7eY5-p_IEFs25BCWDo7vATPPAfwdegpXS2DOgechn8yn1KzWUaGAFktr6GULnJ9AD0S7flTn3Brp9dO8pjssAFlrSphLeAfY7ABEBKr2-tcYHLirXK09vlKiX5REPzauFZzxh7mG52eWcri9rob9Mx6_Jx4zN7QkgcbtEVoW8BjoF3mkGqfL09pGqv"/>
+<div class="absolute inset-0 bg-indigo-600 opacity-70"></div>
+</div>
+<h2 class="text-2xl font-semibold text-gray-800 mb-3 flex items-center">
+<span class="material-icons-outlined mr-2 text-indigo-500">code</span>
+                What I Love Working With
+            </h2>
+<p class="text-gray-600 text-sm mb-4">
+                You will usually find me playing around with:
+            </p>
+<div class="flex flex-wrap gap-2">
+<span class="badge bg-pink-100 text-pink-700">Figma 🎨</span>
+<span class="badge bg-blue-100 text-blue-700">Flutter 📱</span>
+<span class="badge bg-green-100 text-green-700">React ⚛️</span>
+</div>
+</div>
+<div class="card md:col-span-1 lg:col-span-1 flex flex-col bg-gradient-to-br from-indigo-500 to-purple-600 text-white relative overflow-hidden">
+<img alt="Abstract global network" class="absolute inset-0 w-full h-full object-cover opacity-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQiV4pWx-A8a8IvZ_MM2nLjQAzcwQD7vKjLu2mqx_ZuZscQh1kzrBWDwSRzUVKVgbEYWjsAmFGiboZIkRD1VtNsx3WSAqGjsvlK566mRadmamfOrOdg79zg6o55oCFWbdqFaLpN67XuV8v_mExnIZyjJU5aSRaUgUyQBSeOWV8Hy986k10Iu3AWXo6KWxpxiKDehedjZD1WtCKKJPAnu27C8QzDg042JVBGlreF-SM7-2U6Q2P1Ys8tBI7TedglKMzSkd8tbxCf-vB"/>
+<div class="relative z-10 flex flex-col flex-grow">
+<h2 class="text-2xl font-semibold mb-3 flex items-center">
+<span class="material-icons-outlined mr-2">construction</span>
+                    Let's Build Together
+                </h2>
+<p class="text-sm mb-6 opacity-90 flex-grow">
+                    Have a project in mind or just want to connect? I'm always excited to collaborate on innovative ideas and create amazing user experiences.
+                </p>
+<a class="mt-auto self-start bg-white text-indigo-600 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-300 flex items-center" href="#">
+                    Get in Touch <span class="material-icons-outlined text-sm ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="card md:col-span-1 lg:col-span-2 flex flex-col">
+<h2 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+<span class="material-icons-outlined mr-2 text-teal-500">psychology</span>
+                My Skillset
+            </h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+<div class="flex items-center space-x-2 p-3 bg-gray-50 rounded-lg">
+<span class="material-icons-outlined text-yellow-500">palette</span>
+<span class="text-gray-700 text-sm">UI/UX Design</span>
+</div>
+<div class="flex items-center space-x-2 p-3 bg-gray-50 rounded-lg">
+<span class="material-icons-outlined text-sky-500">devices</span>
+<span class="text-gray-700 text-sm">Front-end Dev</span>
+</div>
+<div class="flex items-center space-x-2 p-3 bg-gray-50 rounded-lg">
+<span class="material-icons-outlined text-orange-500">smart_toy</span>
+<span class="text-gray-700 text-sm">Prototyping</span>
+</div>
+<div class="flex items-center space-x-2 p-3 bg-gray-50 rounded-lg">
+<span class="material-icons-outlined text-lime-500">group_work</span>
+<span class="text-gray-700 text-sm">Collaboration</span>
+</div>
+<div class="flex items-center space-x-2 p-3 bg-gray-50 rounded-lg">
+<span class="material-icons-outlined text-red-500">bug_report</span>
+<span class="text-gray-700 text-sm">Debugging</span>
+</div>
+<div class="flex items-center space-x-2 p-3 bg-gray-50 rounded-lg">
+<span class="material-icons-outlined text-fuchsia-500">lightbulb</span>
+<span class="text-gray-700 text-sm">Problem Solving</span>
+</div>
+</div>
+</div>
+<div class="card md:col-span-1 flex flex-col items-center text-center bg-teal-500 text-white">
+<span class="material-icons-outlined text-5xl mb-4">emoji_objects</span>
+<h2 class="text-2xl font-semibold mb-2">Fun Fact</h2>
+<p class="text-sm opacity-90">
+                When I'm not coding or designing, you can find me exploring new hiking trails or trying out new recipes in the kitchen! 🍳🌲
+            </p>
+</div>
+</main>
     </section>
 
     <!-- About Section -->
